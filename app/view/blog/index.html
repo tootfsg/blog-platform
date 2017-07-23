@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>博客平台首页</title>
+    <link href="/public/css/bootstrap.v4.0.0.a4.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/public/blog/css/index.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="col-lg-12">
+            <hr>
+            <hr>
+            <hr>占位
+            <hr>
+            <hr>
+            <hr>
+        </div>
+        <div class="col-lg-12">
+            <div class="col-lg-2">
+                <div class="list-group">
+                    <h4>博主排名</h4>
+                    <ol>
+                        {% for list in list %}
+                        <li>
+                            <a href="/blog/{{list.username}}">{{list.blogger}}</a>
+                        </li>
+                        {% endfor %}
+                    </ol>
+                </div>
+            </div>
+            <div class="col-lg-10">
+                <div class="container">
+                    <ol class="breadcrumb">
+                        <li class="active">平台首页</li>
+                    </ol>
+                    <ol>
+                        {% for hsp in hsp %}
+                        <li>
+                            <a href="/blog/{{hsp.username}}/{{hsp.list}}/{{hsp.id}}" class="heading">{{hsp.h}}</a>
+                            <span class="summary">{{hsp.s}}</span>
+                        </li>
+                        {% endfor %}
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="/public/js/jquery.3.2.1.min.js"></script>
+
+</html>

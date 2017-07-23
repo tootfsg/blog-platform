@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ch-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="/public/css/editormd.css">
+
+    <script src="/public/js/jquery.3.2.1.min.js"></script>
+    <script src="/public/js/editormd.min.js"></script>
+
+    <link rel="stylesheet" href="/public/css/bootstrap.v4.0.0.a4.min.css">
+    <link rel="stylesheet" href="/public/user/css/manage.css">
+</head>
+
+<body>
+    <div class="container">
+        <div>用户名:{{test}}
+            <hr>分组:{% for list in list %}{{list.list}} {% endfor %}</div>
+        <div id="test-editormd">
+            <textarea style="display:none;">[TOC]
+
+#### Disabled options
+
+- TeX (Based on KaTeX);
+- Emoji;
+- Task lists;
+- HTML tags decode;
+- Flowchart and Sequence Diagram;
+
+#### Editor.md directory
+
+    editor.md/
+            lib/
+            css/
+            scss/
+            tests/
+            fonts/
+            images/
+            plugins/
+            examples/
+            languages/     
+            editormd.js
+            ...
+
+```html
+&lt;!-- English --&gt;
+&lt;script src="../dist/js/languages/en.js"&gt;&lt;/script&gt;
+
+&lt;!-- 繁體中文 --&gt;
+&lt;script src="../dist/js/languages/zh-tw.js"&gt;&lt;/script&gt;
+```
+</textarea>
+        </div>
+    </div>
+    <!-- <script src="/public/ueditor/ueditor.config.js"></script>
+    <script src="/public/ueditor/ueditor.all.js"></script> -->
+
+
+
+    <script src="/public/user/js/manage.js"></script>
+</body>
+
+</html>

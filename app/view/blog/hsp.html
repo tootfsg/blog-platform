@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>博客平台首页</title>
+    <link href="/public/css/bootstrap.v4.0.0.a4.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/public/blog/css/hsp.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="col-lg-12">
+            <hr>
+            <hr>
+            <hr>占位
+            <hr>
+            <hr>
+            <hr>
+        </div>
+        <div class="col-lg-12">
+            <div class="col-lg-2">
+                <div class="list-group">
+                    <ol>
+                        {% if name %} {% for list in list %}
+                        <li>
+                            <a href="/blog/{{list.username}}/{{list.listLow}}">{{list.list}}</a>
+                        </li>
+                        {% endfor %} {% endif %} {% if namelist %} {% for list in list %}
+                        <li>
+                            <a href="/blog/{{list.username}}/{{list.listLow}}">{{list.list}}</a>
+                        </li>
+                        {% endfor %} {% endif %} {% if namelistid %} {% for list in list %}
+                        <li>
+                            <a href="/blog/{{list.username}}/{{list.listLow}}">{{list.list}}</a>
+                        </li>
+                        {% endfor %} {% endif %}
+                    </ol>
+                </div>
+            </div>
+            <div class="col-lg-10">
+                <div class="container">
+                    <ol class="breadcrumb">
+                        <li class="active">路径导航</li>
+                    </ol>
+                    <ol>
+                        {% if name %} {% for hsp in hsp %}
+                        <li>
+                            <a href="/blog/{{hsp.username}}/{{hsp.listLow}}/{{hsp.id}}" class="heading">{{hsp.h}}</a>
+                            <span class="summary">{{hsp.s}}{{hsp.p}}</span>
+                        </li>
+                        {% endfor %}{% endif %} {% if namelist %} {% for hsp in hsp %}
+                        <li>
+                            <a href="/blog/{{hsp.username}}/{{hsp.listLow}}/{{hsp.id}}" class="heading">{{hsp.h}}</a>
+                            <span class="summary">{{hsp.s}}{{hsp.p}}</span>
+                        </li>
+                        {% endfor %}{% endif %} {% if namelistid %} {% for hsp in hsp %}
+                        <h3>{{hsp.h}}</h3>
+                        <span class="summary">{{hsp.p}}</span> {% endfor %}{% endif %}
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="/public/js/jquery.3.2.1.min.js"></script>
+
+</html>

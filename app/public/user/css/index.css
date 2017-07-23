@@ -1,0 +1,67 @@
+body {
+	width: 100%;
+	height: 100%;
+}
+
+#bg-img img {
+	z-index: -10;
+	position: fixed;
+	width: 100%;
+	opacity: 0;
+	/*width: 100%;*/
+	/*height: 100%;*/
+	transition: opacity 5s linear;
+	overflow: hidden;
+}
+
+#bg-img-1 {
+	opacity: 1
+}
+
+.form-group {
+	opacity: 0.5;
+}
+
+.register,
+.login,
+.reset {
+	opacity: 0;
+	display: none;
+	transition: all 2s;
+}
+
+.active {
+	display: block;
+	opacity: 1;
+}
+
+#img-btn{
+	position: relative;
+	text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

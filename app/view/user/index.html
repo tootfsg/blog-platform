@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<!--<link href="//cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">-->
+	<link rel="stylesheet" href="/public/css/bootstrap.v4.0.0.a4.min.css">
+	<!--<link rel="stylesheet" type="text/css" href="css/mui.min.css"/>-->
+	<link rel="stylesheet" type="text/css" href="/public/user/css/index.css" />
+</head>
+
+<body>
+	<div id="bg-img">
+		<img id="bg-img-1" class="bg-img" src="/public/user/img/1.jpg" alt="" />
+		<img id="bg-img-2" class="bg-img" src="/public/user/img/2.jpg" alt="" />
+		<img id="bg-img-3" class="bg-img" src="/public/user/img/3.jpg" alt="" />
+	</div>
+	<div class="container">
+		<br><br><br><br>
+		<div id="img-btn">
+			<img id="login" class="img-circle" src="/public/user/img/bg1.jpg" width="80" height="80" alt="Card image cap">
+			<img id="register" class="img-circle" src="/public/user/img/bg1.jpg" width="80" height="80" alt="Card image cap">
+			<img id="reset" class="img-circle" src="/public/user/img/bg1.jpg" width="80" height="80" alt="Card image cap">
+		</div>
+		<br><br><br><br>
+		<div>
+			<div class="login active">
+				<li class="form-group input-group-lg">
+					<input class="form-control " type="text" name="username" value="" placeholder="用户名" pattern="/^[a-zA-Z][a-zA-Z0-9_]{5,20}$/">
+				</li>
+				<li class="form-group input-group-lg">
+					<input class="form-control" type="password" name="password" value="" placeholder="密码" />
+				</li>
+				<button id="btn-login" class="btn btn-success btn-block btn-lg">登录</button>
+			</div>
+			<br>
+			<div class="register">
+				<li class="form-group input-group-lg">
+					<input class="form-control" type="text" name="username" value="" placeholder="用户名">
+				</li>
+				<li class="form-group input-group-lg">
+					<input class="form-control" type="password" name="password" value="" placeholder="密码">
+				</li>
+				<li class="form-group input-group-lg">
+					<input class="form-control" type="password" name="password2" value="" placeholder="确认密码">
+				</li>
+				<button id="btn-register" class="btn btn-warning btn-block btn-lg">注册</button>
+			</div>
+			<br>
+
+			<div class="reset">
+				<li class="form-group input-group-lg">
+					<input class="form-control" type="email" placeholder="邮箱地址">
+				</li>
+				<button id="btn-reset" class="btn btn-primary btn-block btn-lg">重置</button>
+			</div>
+		</div>
+	</div>
+	<script src="/public/js/jquery.3.2.1.min.js"></script>
+	<script src="/public/user/js/index.js"></script>
+	<!--<script src="js/bootstrap.4.0.0.a4.min.js"></script>-->
+</body>
+
+</html>
